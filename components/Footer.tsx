@@ -9,8 +9,14 @@ import { FULL_SOCIAL_LINKS } from '@/lib/constants'
 
 export default function Footer() {
   return (
-    <footer className="bg-[var(--color-surface)] border-t border-[var(--color-border)] py-20 text-[var(--color-text-secondary)]">
-      <div className="container">
+    <footer className="relative bg-[var(--color-surface)] border-t border-[var(--color-border)] py-20 text-[var(--color-text-secondary)] overflow-hidden">
+      <div className="absolute bottom-0 left-0 w-full flex justify-center pointer-events-none select-none z-0 translate-y-1/4">
+        <span className="font-display font-black text-[clamp(8rem,15vw,14rem)] text-white/[0.05] leading-none tracking-tighter">
+          RIDEX
+        </span>
+      </div>
+
+      <div className="container relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="flex flex-col gap-6">
             <Link href="/" className="flex items-center gap-2 w-fit" data-cursor="large">

@@ -31,7 +31,7 @@ export default function PageTransition({ children }: { children: React.ReactNode
   }, { scope: containerRef })
 
   return (
-    <div ref={containerRef} style={{ opacity: 0 }}>
+    <div ref={containerRef} className="opacity-0">
       {children}
     </div>
   )

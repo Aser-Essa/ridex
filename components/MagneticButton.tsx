@@ -15,7 +15,7 @@ export default function MagneticButton({ children }: MagneticButtonProps) {
   useMagneticEffect(ref, 0.35)
 
   return (
-    <div ref={ref} style={{ display: 'inline-block' }}>
+    <div ref={ref} className="inline-block">
       {children}
     </div>
   )
